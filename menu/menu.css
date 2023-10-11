@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+  
+body{
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover ;
+  background-attachment: fixed ;
+
+  
+
+  }
+
+  body image{
+    background-image: url(fondo.jpg);
+    filter: blur(5px);
+    
+  }
+  
+
+
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* text-align: center;  */
+
+  }
+
+
+
+  .column-2.carta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    backdrop-filter: blur(7px);  /* Esto me desenfoca, ir cambiando!*/
+
+   
+  }
+  
+  
+  .plato-carta{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+  }
+  
+  .img-plato-carta{
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column; /* */
+    justify-content: center;
+    height: 100%; /* Ajusta la altura del div al 100% */
+
+  }
+  
+  .img-plato-carta img{
+    flex: 1;
+    width: 100%;
+
+    height: 20px;
+    
+  }
+
+  
+  .title-plato-carta{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 65%;
+    padding: 0 1rem;
+    color: rgb(212, 231, 210);
+    }
+  
+  .precio-plato-carta{
+    display: flex;
+    flex-basis: 12%;
+    justify-content: center;
+    font-weight: bold;
+    color: #e5e5e5;
+    
+    }
+
+  @media (max-width:980px){
+    .column-2.carta{
+      grid-template-columns: repeat(1,1fr);
+        }
+    }
+    @media (min-width: 768px) {
+      video {
+          max-width: 800px; /* Cambia este valor según tus necesidades */
+          height: 10000px;
+      }
+
+  }
+  @media (min-width:980px){
+   
+  }
+
+
+  h2{
+    padding: 10px; /* Añade espacio dentro del rectángulo */
+    border: 2px solid rgba(200, 200, 200, 0.5); /* Borde casi claro con RGBA */
+    display: inline-block; /* Permite que el rectángulo se ajuste al contenido */
+    /*background-color: rgb(59, 65, 65); */   /*<----- dudoso en poner, le hace un fondo a la parte de "sanguches, milanesas, pizzas, etc. "*/ 
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(10px);  /* Esto me desenfoca, ir cambiando!*/
+    padding: 0.9rem 1.4rem; /* bordes mas anchos y altos*/ 
+
+  }
+  
+  h4{
+   font-size: 19px; 
+   
+  }
+  p{
+    font-size: 18px;
+  }
+  #video {
+    /* tenia puesto position:absolute pero cuando bajaba con el mouse el video no cubria todo, absolute -->fixed */
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden; 
+    background-size: cover;
+    object-fit: cover; /* Ajustar el video para cubrir todo el contenedor */
+    z-index: -1; /* poner el video detrás de otros elementos si es necesario */
+
+    background-image: url(pizza.mp4); /* videopizza */ 
+    background-image: url(videosirviendo.mp4); /* videopizza */ 
+
+    filter: blur(0px);   /*ir cambiando si quiero */
+
+    background-position: center;
+    }
+      
+  a{
+    text-decoration: none;
+  }
+  /* div del boton*/ 
+  .boton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+  }
+  /* el boton de arriba a la derecha */ 
+  .cta-btn {
+    font-size: 1.2rem;
+    background-color: #77663e;
+    
+    padding: 1rem 1.8rem;
+    color: #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    min-width: 150px; /* Establece un ancho mínimo opcional */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    
+    top: 2%; /* Ajusta la distancia desde la parte superior según tu preferencia */
+    right: 5%; /* Ajusta la distancia desde la parte derecha según tu preferencia */
+  }
+
+  .cta-btn:hover,
+  .cta-btn:focus {
+    color: #ffffff;
+    background-color: #413823;
+}

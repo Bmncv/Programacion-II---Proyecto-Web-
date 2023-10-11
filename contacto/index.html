@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <meta charset="utf-s"/>
+        <title> Contacto </title>
+        <script src="contacto.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="contact-box">
+                <div class="derecha"></div>
+                <div class="izq">
+                    <!--
+                        <form action="">
+                        <h2>Reserva</h2>
+                        <input type="text" class="field" placeholder="Tu Nombre">
+                        <input type="email" class="field" placeholder="Tu Email">
+                        <input type="text" class="field" placeholder="Tu Telefono">
+                        <input type="number" class="field" placeholder="Cantidad de Personas">
+                        <input type="datetime-local" class="field" placeholder="Fecha de Reserva">
+                        <textarea class="field" placeholder="Mensaje"></textarea>
+                        <button class="btn">Enviar</button>
+                        <audio src="X2Download.app - new guitar (128 kbps) (1).mp3" autoplay="autoplay" loop="loop" id="musiquita"></audio>
+
+                    </form>
+                    -->
+                    
+
+                    <form action="https://formsubmit.co/restaurantebcvz@gmail.com" id="miFormulario" method="POST" >
+                        <h2>Reserva</h2>
+                        <input type="text" class="field" id="nombre" placeholder="Tu Nombre" name="nombre">
+                        <input type="email" class="field" id="email" placeholder="Tu Email" name="email">
+                        <input type="text" class="field" id="telefono" placeholder="Tu Telefono" name="telefono">
+                        <input type="number" class="field" id="cantidadPersonas" placeholder="Cantidad de Personas" name="cantidadPersonas">
+                        <input type="datetime-local" class="field" id="fechaReserva" placeholder="Fecha de Reserva" name="fechaReserva">
+                        <textarea class="field" id="Mensaje" placeholder="Mensaje" name="Mensaje"></textarea>
+                        <button class="btn" onclick="recoleccion()">Enviar</button>
+                        <audio src="X2Download.app - new guitar (128 kbps) (1).mp3" autoplay="autoplay" loop="loop" id="musiquita"></audio>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <script>
+            var musiquitax = document.getElementById("musiquita");
+            musiquitax.volume = 0.05;
+        </script>
+        <!--|  
+        https://stackoverflow.com/questions/36750698/how-to-lower-volume-of-auto-play-of-html-video    -->
+
+    </body>
+</html>
