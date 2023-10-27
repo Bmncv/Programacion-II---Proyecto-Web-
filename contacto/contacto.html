@@ -7,11 +7,14 @@
         <script src="contacto.js"></script>
     </head>
     <body>
-        <div class="container">
+
+        <div class="boton">
+            <a href="../principal/principal.html" class="btn cta-btn" target="_blank" >VOLVER ATRAS</a>
+          </div>
+          <div class="container">
             <div class="contact-box">
                 <div class="derecha"></div>
                 <div class="izq">
-
                     <form action="" id="miFormulario" >
                         <h2>Reserva</h2>
                         <input type="text" class="field" id="nombre" placeholder="Tu Nombre" name="nombre">
@@ -22,18 +25,10 @@
                         <textarea class="field" id="Mensaje" placeholder="Mensaje" name="Mensaje"></textarea>
                         <button class="btn" id="btn" onclick="recoleccion(), mostrarModal();">Enviar</button>
                         <audio src="isnt.mp3" autoplay="autoplay" loop="loop" id="musiquita"></audio>
-
                     </form>
-                    
-                    
-                   
                 </div>
             </div>
         </div>
-
-        
-
-
         <script>
             var musiquitax = document.getElementById("musiquita");
             musiquitax.volume = 0.35;

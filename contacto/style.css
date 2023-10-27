@@ -23,7 +23,7 @@ body{
 
 .container::after{
     content: '';
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -140,4 +140,36 @@ body{
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+
+  /* div del boton*/ 
+  .boton {
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    position: relative;
+
+    padding-left: 80%;
+    
+  }
+  /* el boton de arriba a la derecha */ 
+  .cta-btn {
+    font-size: 1rem;
+    background-color: #77663e;
+    margin-top: 5%;
+    padding: 1rem 1.3rem;
+    color: #fff;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    min-width: 150px; /* Establece un ancho mínimo opcional */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+
+  }
+
+  .cta-btn:hover,
+  .cta-btn:focus {
+    color: #ffffff;
+    background-color: #413823;
 }
